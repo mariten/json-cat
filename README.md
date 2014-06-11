@@ -29,3 +29,30 @@ Assuming that your `~/bin` folder is set in your PATH environment variable:
 cd ~/data/some_directory_with_json_files/
 jsoncat JSON_FILENAME
 ```
+
+Examples
+========
+### Command
+```bash
+jsoncat ~/tmp/bookend.json
+```
+
+### Printed Result
+```
+array (
+  'id' => 105,
+  'name' => 'Cat bookend',
+  'price' => 29.99,
+  'tags' =>
+  array (
+    0 => 'home',
+    1 => 'pets',
+    2 => 'cats',
+  ),
+)
+```
+
+### Original JSON Content
+```
+{"id":105,"name":"Cat bookend","price":29.99,"tags":["home","pets","cats"]}
+```
