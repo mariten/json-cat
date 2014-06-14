@@ -6,12 +6,12 @@ It is written in PHP and takes advantage of a few of its convenient built-in fun
 
 Download
 ========
-Fetch [**jsoncat**](https://github.com/mariten/json-cat/blob/master/bin/jsoncat) from the master branch of this repository, located in the `bin` directory:
+Fetch [**jsoncat**](https://github.com/mariten/json-cat/blob/master/bin/jsoncat-php) from the master branch of this repository, located in the `bin` directory:
 
 ### Download from *nix Command Line
 ```bash
 cd ~/bin
-wget --no-check-certificate 'https://raw.githubusercontent.com/mariten/json-cat/master/bin/jsoncat'
+wget --no-check-certificate -O jsoncat 'https://raw.githubusercontent.com/mariten/json-cat/master/bin/jsoncat-php'
 ```
 
 Install
