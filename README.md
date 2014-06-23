@@ -1,17 +1,25 @@
 What is This?
 =============
-A utility for printing JSON to the Linux command line (like the `cat` command) in a human-readable format
+Utilities for printing JSON to the Linux command line (like the `cat` command) in a human-readable format
 
-It is written in PHP and takes advantage of a few of its convenient built-in functions like `json_decode`
+Available in multiple languages (PHP and Node.js for now), making use of any built-in JSON processing capabilities of a given language
 
 Download
 ========
-Fetch [**jsoncat**](https://github.com/mariten/json-cat/blob/master/bin/jsoncat-php) from the master branch of this repository, located in the `bin` directory:
+Fetch any [**jsoncat**](https://github.com/mariten/json-cat/blob/master/bin/) from the master branch `bin` directory of this repository, located in the `bin` directory.  It is recommended to rename the downloaded version of your choice to `jsoncat`.
 
-### Download from *nix Command Line
+### Download Node.js Version
 ```bash
 cd ~/bin
-wget --no-check-certificate -O jsoncat 'https://raw.githubusercontent.com/mariten/json-cat/master/bin/jsoncat-php'
+wget --no-check-certificate -O jsoncat \
+'https://raw.githubusercontent.com/mariten/json-cat/master/bin/jsoncat-node'
+```
+
+### Download PHP Version
+```bash
+cd ~/bin
+wget --no-check-certificate -O jsoncat \
+'https://raw.githubusercontent.com/mariten/json-cat/master/bin/jsoncat-php'
 ```
 
 Install
@@ -34,22 +42,21 @@ Examples
 ========
 ### Command
 ```bash
-jsoncat ~/tmp/bookend.json
+jsoncat ~/tmp/test.json
 ```
 
 ### Printed Result
 ```
-array (
-  'id' => 105,
-  'name' => 'Cat bookend',
-  'price' => 29.99,
-  'tags' =>
-  array (
-    0 => 'home',
-    1 => 'pets',
-    2 => 'cats',
-  ),
-)
+{
+    "id": 105,
+    "name": "Cat bookend",
+    "price": 29.99,
+    "tags": [
+        "home",
+        "pets",
+        "cats"
+    ]
+}
 ```
 
 ### Original JSON Content
