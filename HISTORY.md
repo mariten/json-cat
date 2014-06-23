@@ -1,3 +1,9 @@
+1.1.0 (2014-06-23)
+====================
+* Added new version using Node.js (`jsoncat-node`)
+* To handle multiple language versions of JSON pretty-printing, renamed existing PHP version from `jsoncat` to `jsoncat-php`
+* Rewrote README to reflect that same logic exists for multiple programming languages (multiple download options)
+
 1.0.0 (2014-06-11)
 ====================
 * Uploaded to GitHub
