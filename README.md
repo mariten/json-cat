@@ -40,13 +40,17 @@ jsoncat JSON_FILENAME
 
 Examples
 ========
-### Command
-```bash
-jsoncat ~/tmp/test.json
+### Without `jsoncat` (Ugly)
+```
+cat ~/tmp/test.json
+-------------------
+{"id":105,"name":"Cat bookend","price":29.99,"tags":["home","pets","cats"]}
 ```
 
-### Printed Result
+### With `jsoncat` (Pretty)
 ```
+jsoncat ~/tmp/test.json
+-------------------
 {
     "id": 105,
     "name": "Cat bookend",
@@ -57,9 +61,4 @@ jsoncat ~/tmp/test.json
         "cats"
     ]
 }
-```
-
-### Original JSON Content
-```
-{"id":105,"name":"Cat bookend","price":29.99,"tags":["home","pets","cats"]}
 ```
