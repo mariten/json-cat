@@ -6,6 +6,8 @@ Available in multiple languages (PHP and Node.js for now), making use of any bui
 
 Download
 ========
+![**I can haz pretty JSON?**](misc/json-cat.png)
+
 Fetch any [**jsoncat**](https://github.com/mariten/json-cat/blob/master/bin/) from the master branch `bin` directory of this repository, located in the `bin` directory.  It is recommended to rename the downloaded version of your choice to `jsoncat`.
 
 ### Download Node.js Version
