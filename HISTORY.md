@@ -1,3 +1,7 @@
+1.3.0 (2015-01-09)
+====================
+* Added new version using GoLang (`golang-jsoncat.go`)
+
 1.2.0 (2014-10-23)
 ====================
 * Added new version using Node.js (`python-jsoncat.py`)
