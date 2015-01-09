@@ -4,7 +4,7 @@ What is This?
 
 Utilities for printing JSON to the Linux command line (like the `cat` command) in a human-readable format
 
-Available in multiple languages (PHP, Python, and Node.js for now), making use of any built-in JSON processing capabilities of a given language
+Available in multiple languages (PHP, GoLang, Python, and Node.js for now), making use of any built-in JSON processing capabilities of a given language
 
 Download and Install
 ====================
@@ -12,12 +12,13 @@ Fetch any [**jsoncat**](https://github.com/mariten/json-cat/blob/master/bin/) fr
 
 It is recommended to name the downloaded script as `jsoncat` and set it to be executable.
 
-### Install Python Version
-**Requires Python 2.6 or above**
+### Install GoLang Version
 ```bash
 cd ~/bin
-wget --no-check-certificate -O jsoncat \
-'https://raw.githubusercontent.com/mariten/json-cat/master/bin/python-jsoncat.py'
+wget --no-check-certificate -O jsoncat.go \
+'https://raw.githubusercontent.com/mariten/json-cat/master/bin/golang-jsoncat.go'
+go build jsoncat.go
+rm jsoncat.go
 chmod +x jsoncat
 ```
 
@@ -26,6 +27,15 @@ chmod +x jsoncat
 cd ~/bin
 wget --no-check-certificate -O jsoncat \
 'https://raw.githubusercontent.com/mariten/json-cat/master/bin/node-jsoncat.sh'
+chmod +x jsoncat
+```
+
+### Install Python Version
+**Requires Python 2.6 or above**
+```bash
+cd ~/bin
+wget --no-check-certificate -O jsoncat \
+'https://raw.githubusercontent.com/mariten/json-cat/master/bin/python-jsoncat.py'
 chmod +x jsoncat
 ```
 
